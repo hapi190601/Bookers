@@ -23,5 +23,31 @@ span {
 }
 
 p {
-  margin: 1rem 0;
+  margin: 33px;
+}
+
+.th {
+  padding-bottom: 5px;
+}
+
+
+td {
+    padding: 0 5px 7px;
+}
+
+
+.form_with {
+  margin: 17px 0;
+}
+
+.form_with > h2 {
+  margin-bottom: 17px;
+}
+
+.box {
+  margin-bottom: 10px;
+}
+
+.success_message {
+  color: green;
 }

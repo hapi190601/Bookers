@@ -14,7 +14,7 @@
             <tr>
                 <td><%= booker.title %></td>
                 <td><%= booker.body %></td>
-                <td><%= link_to "show", "/" %></td>
+                <td><%= link_to "Show", "/bookers/#{booker.id}" %></td>
                 <td><%= link_to "Edit", "/" %></td>
                 <td><%= link_to "Destroy","/" %></td>
             </tr>
@@ -22,13 +22,27 @@
     </tbody>
 </table>
 
-<h2>New book</h2>
 
-<%= form_with model:@booker, url:"/bookers", local:true do |f| %>
-    <h4>Title</h4>
-    <%= f.text_field :title %>
-    <h4>Body</h4>
-    <%= f.text_area :body %>
-    <p><%= f.submit "Create Book" %></p>
-<% end %>
+
+<div class="form_with">
+    <h2>New book</h2>
+
+    <%= form_with model:@booker, url:"/bookers", local:true do |f| %>
+
+        <div class="box">
+            <h4>Title</h4>
+            <%= f.text_field :title %>
+            </div>
+        <h4>Body</h4>
+
+        <div class="box">
+            <%= f.text_area :body %>
+        </div>
+
+        <div class="block">
+            <%= f.submit "  Create Book  " %>
+        </div>
+
+    <% end %>
+</div>
 

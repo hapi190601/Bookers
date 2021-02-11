@@ -1,0 +1,10 @@
+<% if @booker.save %>
+<p class="success_message">Book was Successfully created</p>
+<% end %>
+
+<p><strong>Title</strong>: <%= @booker.title %></p>
+
+
+<p><strong>Body</strong>: <%= @booker.body %></p>
+
+<%= link_to "Edit" , "/" %> | <%= link_to "Back" , "/bookers/index" %>
