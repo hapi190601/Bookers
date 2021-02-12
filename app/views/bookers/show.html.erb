@@ -1,10 +1,10 @@
-<% if @booker.save %>
-<p class="success_message">Book was Successfully created</p>
-<% end %>
+<!--<% if @booker.save %>-->
+<!--<p class="if_message">Book was Successfully created</p>-->
+<!--<% end %>-->
 
 <p><strong>Title</strong>: <%= @booker.title %></p>
 
 
 <p><strong>Body</strong>: <%= @booker.body %></p>
 
-<%= link_to "Edit" , "/" %> | <%= link_to "Back" , "/bookers/index" %>
+<%= link_to "Edit" , edit_path(@booker.id) %> | <%= link_to "Back" , "/bookers/index" %>

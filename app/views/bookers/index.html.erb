@@ -14,9 +14,9 @@
             <tr>
                 <td><%= booker.title %></td>
                 <td><%= booker.body %></td>
-                <td><%= link_to "Show", "/bookers/#{booker.id}" %></td>
-                <td><%= link_to "Edit", "/" %></td>
-                <td><%= link_to "Destroy","/" %></td>
+                <td><%= link_to "Show" , "/bookers/#{booker.id}" %></td>
+                <td><%= link_to "Edit" , "/bookers/#{booker.id}/edit" %></td>
+                <td><%= link_to "Destroy" , "/bookers/#{booker.id}"  , method: :delete , "data-confirm" => "本当に削除しますか？" %></td>
             </tr>
         <% end %>
     </tbody>

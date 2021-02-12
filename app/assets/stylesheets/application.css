@@ -26,7 +26,7 @@ p {
   margin: 33px;
 }
 
-.th {
+th {
   padding-bottom: 5px;
 }
 
@@ -48,6 +48,10 @@ td {
   margin-bottom: 10px;
 }
 
-.success_message {
+.if_message {
   color: green;
+}
+
+.block {
+  margin-bottom: 10px;
 }
